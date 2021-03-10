@@ -1,0 +1,309 @@
+@viewport {
+  max-width: 400px;
+}
+body{
+ background-image: url('bg-lines.png'),url('bg-strip.jpg');
+  
+  background-repeat: no-repeat,repeat;
+    background-size: contain;
+      background-attachment: fixed;
+  background-position: center top;
+  background-color: grey;
+font-family: 'Martel Sans', sans-serif !important;
+  font-weight: 600;
+}
+.mt-n1{
+margin-top: -2.25em;	
+
+}
+.header {
+  padding: 10px 16px;
+ background-image: url('bg-lines.png'),url('bg-strip.jpg');
+  
+  background-repeat: no-repeat,repeat;
+    background-size: contain;
+      background-attachment: fixed;
+  background-position: center top;
+  border-bottom: solid #d2d2d2d9 1px;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index:4;
+}
+
+.sticky h2 {
+  font-size: 1em;
+}
+
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .container {
+  margin-top: 100px;
+}
+
+
+
+.wrapper {
+  overflow: hidden;
+  
+}
+
+div.inverted-corner {
+  box-sizing: border-box;
+  position: relative;
+  
+  border: solid #ff7d27 1px;
+}
+
+.top, .bottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.top:before, .top:after, .bottom:before, .bottom:after {
+  content: " ";
+   background-image: url('bg-lines.png'),url('bg-strip.jpg');
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: solid #ff7d27 1px;
+  border-radius: 20px;
+}
+
+.top:before {
+  top: -24px;
+  left: -24px;
+}
+
+.top:after {
+  top: -24px;
+  right: -24px;
+  /*box-shadow: inset 1px 1px 1px grey;*/
+}
+
+.bottom:before {
+  bottom: -24px;
+  left: -24px;
+}
+
+.bottom:after {
+  bottom: -24px;
+  right: -24px;
+  /*box-shadow: inset 1px 1px 1px grey;*/
+}
+
+.menuitemdesc{
+
+	/*font-weight:  400;
+	font-size: 0.8em;*/
+
+      font-size: 0.75em;
+    color: #8e8d8d;
+}
+.menuitemdesc div u{
+  text-decoration-color: #fca51e;
+}
+
+.menu_catname{
+
+font-size: 1.6em;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+    top: 1.4em;
+    z-index: 3;
+}
+.menu_catname p{
+	display: inline-block;
+		background-image: url('bg-lines.png'),url('bg-strip.jpg');
+		color: #ff7d27;
+}
+
+#logodiv {
+	transition: 0.2s;
+	transition-timing-function: ease-out;
+}
+
+
+.menu-button{
+
+	position: fixed;
+	bottom:0px;
+	z-index: 7;
+	left: 0px;
+	width: 100%;
+	
+}
+.menu-button-row{
+	background-image: linear-gradient(to bottom, transparent, white 70%);
+    padding-bottom: 20px;
+}
+.menu-button-col{
+	z-index: 9;
+}
+
+.btn-fab{
+white-space: normal;
+}
+
+#main{
+	padding: 35px;
+	background-color: #28a6c1;
+
+}
+#main p{
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    line-height: 1;
+
+}
+
+.hidden{
+	opacity: 0 !important;
+}
+
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  position: fixed; /* Stay in place */
+  /*z-index: 8;  Sit on top */
+  left: 0;
+  top: 0;
+    background-image: linear-gradient(to bottom right, #ee9049, #f7b439);
+  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  width: 100%;
+  text-align: center; /* Centered text/links */
+  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 4px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.round{
+	background: #c00;
+	background:
+		linear-gradient(135deg, transparent 10px, #fff 0) top left,
+		linear-gradient(225deg, transparent 10px, #fff 0) top right,
+		linear-gradient(315deg, transparent 10px, #fff 0) bottom right,
+		linear-gradient(45deg,  transparent 10px, #fff 0) bottom left;
+	
+	background-image:
+		radial-gradient(circle at 0 0, rgba(255,255,255,0) 14px, #fff 15px),
+		radial-gradient(circle at 100% 0, rgba(255,255,255,0) 14px, #fff 15px),
+		radial-gradient(circle at 100% 100%, rgba(255,255,255,0) 14px, #fff 15px),
+		radial-gradient(circle at 0 100%, rgba(255,255,255,0) 14px, #fff 15px);
+	background-size: 51% 51%;
+	background-repeat: no-repeat;
+
+	padding: 45px;
+}
+.round a{
+
+	font-size: 16px;
+}
+.zind{
+	z-index: 8;
+}
+.seperater{
+	width: 100%;
+    height: 2px;
+    background-image: radial-gradient(#76caea, #FFF), radial-gradient(#76caea, #FFF);
+    background-position: 0, 100%, 0, 100%;
+}
+
+#circle {
+	width: 70px;
+	height: 70px;
+	background: #ee9149;;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  border: solid #fff 4px;
+position: relative;
+top:34px;
+line-height: 1.3em;
+  
+}
+#circle p{
+  
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  top: 14px;
+}
+
+#closebutton{
+
+	width: 50px;
+    height: 50px;
+    background: #28a6c1;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: solid #fff 4px;
+    position: relative;
+    top: -25px;
+    line-height: 2em;
+}
+
+#closebutton p{
+	color: white;
+    font-size: 3em;
+    position: relative;
+    top: 7px;
+    left: -5px;
+}
