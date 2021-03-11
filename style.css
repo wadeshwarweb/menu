@@ -2,16 +2,20 @@
   max-width: 400px;
 }
 body{
+  background-color: white !important;
+font-family: 'Martel Sans', sans-serif !important;
+  font-weight: 600;
+}
+.subbody{
  background-image: url('bg-lines.png'),url('bg-strip.jpg');
   
   background-repeat: no-repeat,repeat;
     background-size: contain;
       background-attachment: fixed;
   background-position: center top;
-  background-color: grey;
-font-family: 'Martel Sans', sans-serif !important;
-  font-weight: 600;
+  
 }
+
 .mt-n1{
 margin-top: -2.25em;	
 
@@ -306,4 +310,103 @@ line-height: 1.3em;
     position: relative;
     top: 7px;
     left: -5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fe882b !important;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+    height: 19px;
+    width: 19px;
+    left: 5px;
+    bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #fe882b;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #fe882b;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(19px);
+  -ms-transform: translateX(19px);
+  transform: translateX(19px);
+}
+
+
+/* Rounded sliders */
+.slider.roundbt {
+  border-radius: 34px;
+  font-size: .95em;
+  font-weight: 600;
+}
+
+.slider.roundbt:before {
+  border-radius: 50%;
+}
+
+.english{
+      position: relative;
+    top: -35px;
+    left: 11px;
+    /* content: close-quote; */
+    color: white;
+}
+
+.marathi{
+
+      left: -8px;
+    position: relative;
+    top: 3px;
+ color: #ff7928;   
+}
+
+input:checked + span .english{
+
+color: #ff7928;
+}
+input:checked + span .marathi{
+color: white;
+  
+}
+
+div.en :lang(mr) {
+  display: none;
+}
+div.mr :lang(en){
+  display: none;
+}
+
+#marker{
+  background-color: #f2d3bc;
 }
