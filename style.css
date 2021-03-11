@@ -408,5 +408,7 @@ div.mr :lang(en){
 }
 
 #marker{
-  background-color: #f2d3bc;
+      background-color: #dadada;
+    padding-right: .25rem!important;
+    padding-left: .25rem!important;
 }
