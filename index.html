@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
+    <link rel="stylesheet" href="style.css" media="none" onload="if(media!='all')media='all'">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/g/bootstrap.material-design@0.5.9(css/ripples.min.css+css/bootstrap-material-design.min.css)'>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
     <title>Wadeshwar Menu</title>
@@ -17,17 +17,18 @@
     
 
 <!-- The overlay -->
-<div id="myNav" class="overlay hidden d-flex align-items-center">
+<div id="myNav" class="overlay hidden d-flex align-items-end">
 
 
    <!-- Overlay content -->
    <div class="overlay-content ">
     <div class="offset-1 col-10">
         <div class="row justify-content-center" style="    margin-top: -52px;">
-          <div id="circle"><p>ME NU</p></div>
+          <div id="circle"><p>MENU</p></div>
         </div>
     
         <div class="round offset-md-4 col-md-4">
+          <div class="roundinside">
       <a class="menu" target="ourspeciality">our speciality</a><div class="seperater"></div>
       <a class="menu" target="wada">wada</a><div class="seperater"></div>
       <a class="menu" target="snacks">snacks</a><div class="seperater"></div>
@@ -46,7 +47,7 @@
       <a class="menu" target="beverages">beverages</a><div class="seperater"></div>
       <a class="menu" target="icecreamsscoop">ice creams (scoop)</a><div class="seperater"></div>
         </div>
-
+</div>
         <div class="row justify-content-center">
           <div id="closebutton"><p>&times;</p></div>
         </div>
@@ -88,7 +89,7 @@
       <div class="menu-button" id="myfooter">
         <div class="row justify-content-center menu-button-row">
           <div class="col-auto align-self-center menu-button-col">
-                <a href="javascript:void(0)" class="btn btn-success btn-fab" id="main"><p class="material-icons">ME NU</p></a>
+                <a href="javascript:void(0)" class="btn btn-success btn-fab" id="main"><p class="material-icons">MENU</p></a>
           </div>
         </div>
       </div>
@@ -114,10 +115,10 @@
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">molgapodi idli </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >130.00</div></div><div class="row menuitemdesc"><div class="col-10">(mini idlis tossed in desi ghee and gun powder-molgapodi chutney)</div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">pessarattu dosa </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >130.00</div></div><div class="row menuitemdesc"><div class="col-10">(served with rassam and chutney)</div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">aappe  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >80.00</div></div>
-<div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">coconut kachori </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >100.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(only thu., sat., & sun.)</span></div></div>
+<div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">coconut kachori </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >100.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(only Thus Sat & Sun)</span></div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">sweet corn pattice </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >95.00</div></div><div class="row menuitemdesc"><div class="col-10">(in-house prepared eggless brownie served with vanilla ice cream & hot chocolate sauce)</div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;"> walnut brownie </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >170.00</div></div>
-<div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">filter water pani puri </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >130.00</div></div><div class="row menuitemdesc"><div class="col-10">(basket of 20 puris) <span id="marker">(4.00 pm onwards)</span></div></div>
+<div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">filter water pani puri </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >130.00</div></div><div class="row menuitemdesc"><div class="col-10">(basket of 20 puris) <br> <span id="marker">(4.00 pm onwards)</span></div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">aloo paratha & raita </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >130.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(12.30 p.m. onwards)</span></div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">moong daal halva </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >100.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(12.30 p.m. onwards)</span></div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">gulabjamun </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >70.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(12.30 p.m. onwards)</span></div></div>
@@ -178,7 +179,7 @@
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">cheese tomato omelette </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >140.00</div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">sweet corn pattice </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >95.00</div></div>
 <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">finger chips </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >100.00</div></div>
-<div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">coconut kachori </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >100.00</div></div><div class="row menuitemdesc"><div class="col-10">(only thu., sat., & sun.)</div></div>
+<div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 50%;">coconut kachori </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >100.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(only Thus Sat & Sun)</span></div></div>
 
 
 
@@ -231,10 +232,10 @@
   <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">mysore cheese plain dosa </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹150.00</div></div>
   
 <div class="bottom"> </div></div></div></div></div>  <!-- replace -->   <div class="row justify-content-center"><div class="col-11 align-self-center"><div class="menu_catname align-self-center"><p class="brunch px-2">brunch</p></div><div class="wrapper"><div class="inverted-corner py-5 px-3"><div class="top">&nbsp;</div>  
-  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">upma  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹50.00</div></div><div class="row menuitemdesc"><div class="col-10">(7 a.m. to 11 a.m.)</div></div>
-  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">thalipith  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹95.00</div></div><div class="row menuitemdesc"><div class="col-10">(8 a.m. to 7 p.m.)</div></div>
-  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">sabudana khichdi </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹85.00</div></div><div class="row menuitemdesc"><div class="col-10">with kakadi raita (only thu. & sat.)</div></div>
-  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">misal  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹95.00</div></div><div class="row menuitemdesc"><div class="col-10">(7 a.m. to 7 p.m.)</div></div>
+  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">upma  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹50.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(7 a.m. to 11 a.m.)</span></div></div>
+  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">thalipith  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹95.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(8 a.m. to 7 p.m.)</span></div></div>
+  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">sabudana khichdi </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹85.00</div></div><div class="row menuitemdesc"><div class="col-10">with kakadi raita <br><span id="marker">(only Thus & Sat)</span></div></div>
+  <div class="row menuitem pt-3 "><div class="col-auto" style="max-width: 56%;">misal  </div><div class="col border-bottom mb-1"></div><div class="col-auto d-flex align-items-end" >₹95.00</div></div><div class="row menuitemdesc"><div class="col-10"><span id="marker">(7 a.m. to 7 p.m.)</span></div></div>
   
   
 <div class="bottom"> </div></div></div></div></div>  <!-- replace -->   <div class="row justify-content-center"><div class="col-11 align-self-center"><div class="menu_catname align-self-center"><p class="sandwiches px-2">sandwiches</p></div><div class="wrapper"><div class="inverted-corner py-5 px-3"><div class="top">&nbsp;</div>  
@@ -629,12 +630,13 @@ function myFunction() {
     header.classList.add("sticky");
     logodiv.classList.remove("col-8");
     logodiv.classList.add("col-5");
+    logodiv.classList.add("shiftup");
 
   } else {
     header.classList.remove("sticky");
     logodiv.classList.remove("col-5");
     logodiv.classList.add("col-8");
-    
+    logodiv.classList.remove("shiftup");
   }
 }
 
@@ -658,16 +660,21 @@ $("#main").click(function() {
 $("#closebutton").click(function() {
   $("#myNav").toggleClass('hidden');
   $("#myNav").toggleClass('zind');
+  $("#myNav").toggleClass('hidden');
+  $("#myNav").toggleClass('zind');
 });
 
+$("#myNav").click(function() {
+  $("#myNav").toggleClass('hidden');
+  $("#myNav").toggleClass('zind');
+});
 
 $(".menu").click(function() {
-  console.log(eval($('.' + $(this).attr('target')).offset().top - 90));
+  console.log(eval($('.' + $(this).attr('target')).offset().top - $(".header").outerHeight()-10));
     $('html,body').animate({
-        scrollTop: eval($('.' + $(this).attr('target')).offset().top - 90) },
+        scrollTop: eval($('.' + $(this).attr('target')).offset().top - $(".header").outerHeight()-10) },
         'fast');
-    $("#myNav").toggleClass('hidden');
-    $("#myNav").toggleClass('zind');
+   
 });
 
 

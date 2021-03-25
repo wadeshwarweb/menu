@@ -5,6 +5,7 @@ body{
   background-color: white !important;
 font-family: 'Martel Sans', sans-serif !important;
   font-weight: 600;
+  /*overflow: hidden;*/
 }
 .subbody{
  background-image: url('bg-lines.png'),url('bg-strip.jpg');
@@ -42,6 +43,7 @@ margin-top: -2.25em;
   top: 0;
   width: 100%;
   z-index:4;
+  padding-bottom: 0px;
 }
 
 .sticky h2 {
@@ -141,6 +143,10 @@ font-size: 1.6em;
 	transition-timing-function: ease-out;
 }
 
+.shiftup{
+    position: relative;
+    top: -17px;
+}
 
 .menu-button{
 
@@ -164,14 +170,17 @@ white-space: normal;
 }
 
 #main{
-	padding: 35px;
+	padding: 27px;
 	background-color: #28a6c1;
+  width: 97px;
+  border-radius: 28px;
+  height: 31px;
 
 }
 #main p{
     position: absolute;
-    top: 12px;
-    left: 2px;
+    top: 17px;
+    left: 13px;
     line-height: 1;
 
 }
@@ -205,7 +214,7 @@ white-space: normal;
 
 /* The navigation links inside the overlay */
 .overlay a {
-  padding: 4px;
+  padding: 8px;
   text-decoration: none;
   font-size: 1em;
   color: #818181;
@@ -252,11 +261,41 @@ white-space: normal;
 	background-size: 51% 51%;
 	background-repeat: no-repeat;
 
-	padding: 45px;
+	padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom:30px;
+    max-height: 400px;
+    /* overflow: scroll; */
+
+
 }
+
+.roundinside{
+      scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 309px;
+    z-index: 9;
+}
+
+.roundinside::-webkit-scrollbar {
+  width: 7px;
+}
+
+
+/*.roundinside::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}*/
+
+.roundinside::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  border-radius: 10px;
+}
+
 .round a{
 
-	font-size: 16px;
+	font-size: 20px;
 }
 .zind{
 	z-index: 8;
@@ -264,20 +303,20 @@ white-space: normal;
 .seperater{
 	width: 100%;
     height: 2px;
-    background-image: radial-gradient(#76caea, #FFF), radial-gradient(#76caea, #FFF);
+    background: radial-gradient(50% 62% at center, #76caea,#FFF);
     background-position: 0, 100%, 0, 100%;
 }
 
 #circle {
-	width: 70px;
+	/*width: 70px;*/
 	height: 70px;
-	background: #ee9149;;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-  border: solid #fff 4px;
+	/*background: #ee9149;;*/
+	/*-moz-border-radius: 50px;*/
+	/*-webkit-border-radius: 50px;*/
+	/*border-radius: 50px;*/
+  /*border: solid #fff 4px;*/
 position: relative;
-top:34px;
+top:25px;
 line-height: 1.3em;
   
 }
@@ -408,7 +447,8 @@ div.mr :lang(en){
 }
 
 #marker{
-      background-color: #dadada;
+      background-color: #eab596;
+      color: white;
     padding-right: .25rem!important;
     padding-left: .25rem!important;
 }
