@@ -158,7 +158,7 @@ font-size: 1.6em;
 	
 }
 .menu-button-row{
-	background-image: linear-gradient(to bottom, transparent, white 70%);
+	background: linear-gradient(to bottom, transparent, white 70%);
     padding-bottom: 20px;
 }
 .menu-button-col{
@@ -178,10 +178,14 @@ white-space: normal;
 
 }
 #main p{
-    position: absolute;
-    top: 17px;
-    left: 13px;
+    position: relative;
+    top: -10px;
+    left: -14px;
     line-height: 1;
+    font-size: 24px;
+    font-family: 'Martel Sans';
+    font-weight: 600;
+
 
 }
 
@@ -276,6 +280,9 @@ white-space: normal;
     overflow-y: scroll;
     height: 309px;
     z-index: 9;
+    padding-top: 23px;
+    padding-bottom: 23px;
+
 }
 
 .roundinside::-webkit-scrollbar {
